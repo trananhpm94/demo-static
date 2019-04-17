@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js-cloudimage-360-view</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="manifest"
+      href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/manifest.json"
+    />
+
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-config"
+      content="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- simply iniatialize it with class name "cloudimage-360", server folder path, file name and amount of images -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="transform: rotate(180deg);">
+          <div
+            class="cloudimage-360"
+            data-folder="./public/images/glass/"
+            data-filename="glass-{index}.jpg"
+            data-amount="52"
+            data-magnifier="3"
+            data-autoplay="true"
+            data-box-shadow="inset 0 0 100px #222"
+          ></div>
+        </div>
+        <div class="col-sm-6">
+          <div
+            class="cloudimage-360"
+            data-folder="https://scaleflex.ultrafast.io/https://scaleflex.airstore.io/demo/chair-360-36/"
+            data-filename="chair_{index}.jpg?v1"
+            data-amount="36"
+            data-magnifier="3"
+          ></div>
+        </div>
+        <div class="col-sm-12" style="width:100%">
+          <div
+            class="cloudimage-360"
+            data-folder="./public/images/360-car/"
+            data-filename="iris-{index}.jpeg"
+            data-amount="36"
+            data-magnifier="3"
+            data-spin-reverse
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- Add script tag with CDN link to js-cloudimage-360-view lib after all content in body tag -->
+    <script src="https://cdn.scaleflex.it/filerobot/js-cloudimage-360-view/v2.0.2.min.js"></script>
+  </body>
+</html>
