@@ -1,0 +1,24 @@
+{
+  "name": "demo-static",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/trananhpm94/demo-static/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trananhpm94/demo-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trananhpm94/demo-static/issues"
+  },
+  "homepage": "https://github.com/trananhpm94/demo-static#readme"
+}

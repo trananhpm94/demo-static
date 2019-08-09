@@ -1,0 +1,11 @@
+apps:
+  - script: npm
+    args: 'start'
+    watch: true
+    name: 'we-design-fe'
+    env:
+      NODE_DEV: 'ci'
+      PORT: 3005
+    env_ci:
+      NODE_DEV: 'ci'
+      PORT: 3005

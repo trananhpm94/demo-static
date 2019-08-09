@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GPC (Google Cloud Print) Web Element</title>
+    <link rel="stylesheet" href="">
+    <script src="https://www.google.com/cloudprint/client/cpgadget.js"></script>
+    <script>
+        window.manualPrint = (e) => {
+            e.preventDefault();
+            cloudprintGadget.setPrintDocument("[document mimetype]", "[document title]", "[document content]", "[encoding] (optional)");
+            cloudprintGadget.openPrintDialog();
+        };
+        window.onload = () => {
+            window.cloudprintGadget = new cloudprint.Gadget();
+            const defaultButton = cloudprint.Gadget.createDefaultPrintButton('default-button');
+            cloudprintGadget.setPrintButton(defaultButton);
+            document.getElementById('manual-button').onclick = manualPrint;
+        };
+    </script>
+</head>
+<body>
+    <h1>GPC (Google Cloud Print) Web Element</h1>
+    <h2>Documentation</h2>
+    <p><a target="_blank" href="https://developers.google.com/cloud-print/docs/gadget">https://developers.google.com/cloud-print/docs/gadget</a></p>
+    <h2>Example Buttons</h2>
+    <p><a href="" id="manual-button">🖨&nbsp;&nbsp;Print</a></p>
+    <p><div id="default-button"></div></p>
+</body>
+</html>
